@@ -170,13 +170,13 @@ const styles = StyleSheet.create({
   genreText: {
     color: "#fff",
     fontSize: 10,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
     textTransform: "uppercase",
   },
   movieTitle: {
     color: "#fff",
     fontSize: 26,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "700" as const,
     lineHeight: 32,
     marginBottom: 6,
   },
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
   rating: {
     color: Colors.dark.rating,
     fontSize: 14,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
   },
   dot: {
     color: Colors.dark.textMuted,
@@ -203,12 +203,12 @@ const styles = StyleSheet.create({
   year: {
     color: Colors.dark.textSecondary,
     fontSize: 13,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
   },
   overview: {
     color: Colors.dark.textSecondary,
     fontSize: 13,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
     lineHeight: 18,
   },
   pagination: {

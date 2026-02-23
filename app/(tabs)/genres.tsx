@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   header: {
     color: Colors.dark.text,
     fontSize: 28,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "700" as const,
     paddingHorizontal: 16,
     paddingTop: 8,
     paddingBottom: 12,

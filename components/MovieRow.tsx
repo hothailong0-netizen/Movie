@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   title: {
     color: Colors.dark.text,
     fontSize: 18,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "700" as const,
   },
   seeAll: {
     flexDirection: "row",
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   seeAllText: {
     color: Colors.dark.primary,
     fontSize: 13,
-    fontFamily: "Inter_500Medium",
+    fontWeight: "500" as const,
   },
   list: {
     paddingHorizontal: 16,

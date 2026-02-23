@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   errorText: {
     color: Colors.dark.textSecondary,
     fontSize: 15,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
     textAlign: "center",
     lineHeight: 22,
   },

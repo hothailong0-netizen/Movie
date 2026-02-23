@@ -275,13 +275,13 @@ const castStyles = StyleSheet.create({
   name: {
     color: Colors.dark.text,
     fontSize: 11,
-    fontFamily: "Inter_500Medium",
+    fontWeight: "500" as const,
     textAlign: "center",
   },
   character: {
     color: Colors.dark.textMuted,
     fontSize: 10,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
     textAlign: "center",
     marginTop: 1,
   },
@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
   errorText: {
     color: Colors.dark.textSecondary,
     fontSize: 16,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
   },
   backdropWrap: {
     width: SCREEN_WIDTH,
@@ -355,13 +355,13 @@ const styles = StyleSheet.create({
   title: {
     color: Colors.dark.text,
     fontSize: 22,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "700" as const,
     lineHeight: 28,
   },
   tagline: {
     color: Colors.dark.textMuted,
     fontSize: 13,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
     fontStyle: "italic",
   },
   metaRow: {
@@ -378,12 +378,12 @@ const styles = StyleSheet.create({
   ratingVal: {
     color: Colors.dark.rating,
     fontSize: 15,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "700" as const,
   },
   voteCount: {
     color: Colors.dark.textMuted,
     fontSize: 12,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
   },
   chipRow: {
     flexDirection: "row",
@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
   chipText: {
     color: Colors.dark.textSecondary,
     fontSize: 11,
-    fontFamily: "Inter_500Medium",
+    fontWeight: "500" as const,
   },
   genreRow: {
     flexDirection: "row",
@@ -422,7 +422,7 @@ const styles = StyleSheet.create({
   genreText: {
     color: Colors.dark.primaryLight,
     fontSize: 12,
-    fontFamily: "Inter_500Medium",
+    fontWeight: "500" as const,
   },
   overviewSection: {
     marginTop: 20,
@@ -430,13 +430,13 @@ const styles = StyleSheet.create({
   sectionTitle: {
     color: Colors.dark.text,
     fontSize: 17,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "700" as const,
     marginBottom: 10,
   },
   overviewText: {
     color: Colors.dark.textSecondary,
     fontSize: 14,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
     lineHeight: 22,
   },
   directorRow: {
@@ -448,12 +448,12 @@ const styles = StyleSheet.create({
   directorLabel: {
     color: Colors.dark.textMuted,
     fontSize: 13,
-    fontFamily: "Inter_500Medium",
+    fontWeight: "500" as const,
   },
   directorName: {
     color: Colors.dark.text,
     fontSize: 13,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
   },
   castSection: {
     marginTop: 20,

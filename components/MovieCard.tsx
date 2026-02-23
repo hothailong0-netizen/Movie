@@ -95,19 +95,19 @@ const styles = StyleSheet.create({
   ratingText: {
     color: Colors.dark.rating,
     fontSize: 11,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
   },
   title: {
     color: Colors.dark.text,
     fontSize: 13,
-    fontFamily: "Inter_500Medium",
+    fontWeight: "500" as const,
     marginTop: 8,
     lineHeight: 17,
   },
   year: {
     color: Colors.dark.textMuted,
     fontSize: 11,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
     marginTop: 2,
   },
 });

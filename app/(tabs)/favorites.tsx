@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
   header: {
     color: Colors.dark.text,
     fontSize: 28,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "700" as const,
     paddingHorizontal: 16,
     paddingTop: 8,
     paddingBottom: 12,
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
   movieTitle: {
     color: Colors.dark.text,
     fontSize: 15,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
     lineHeight: 20,
   },
   metaRow: {
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   rating: {
     color: Colors.dark.rating,
     fontSize: 13,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
   },
   metaDot: {
     color: Colors.dark.textMuted,
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
   year: {
     color: Colors.dark.textSecondary,
     fontSize: 13,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
   },
   removeBtn: {
     padding: 8,
@@ -190,12 +190,12 @@ const styles = StyleSheet.create({
   emptyTitle: {
     color: Colors.dark.text,
     fontSize: 18,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
   },
   emptyText: {
     color: Colors.dark.textMuted,
     fontSize: 14,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
     textAlign: "center",
     lineHeight: 20,
   },

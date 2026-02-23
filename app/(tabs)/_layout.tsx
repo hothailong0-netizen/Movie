@@ -59,7 +59,7 @@ function ClassicTabLayout() {
             <View style={[StyleSheet.absoluteFill, { backgroundColor: Colors.dark.background }]} />
           ) : null,
         tabBarLabelStyle: {
-          fontFamily: "Inter_500Medium",
+          fontWeight: "500" as const,
           fontSize: 11,
         },
       }}

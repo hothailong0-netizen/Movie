@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     color: Colors.dark.text,
     fontSize: 20,
-    fontFamily: "Inter_700Bold",
+    fontWeight: "700" as const,
   },
   loadingWrap: {
     flex: 1,
@@ -187,12 +187,12 @@ const styles = StyleSheet.create({
   ratingText: {
     color: Colors.dark.rating,
     fontSize: 10,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
   },
   movieTitle: {
     color: Colors.dark.text,
     fontSize: 12,
-    fontFamily: "Inter_500Medium",
+    fontWeight: "500" as const,
     marginTop: 6,
     lineHeight: 16,
   },
@@ -217,6 +217,6 @@ const styles = StyleSheet.create({
   pageText: {
     color: Colors.dark.textSecondary,
     fontSize: 14,
-    fontFamily: "Inter_500Medium",
+    fontWeight: "500" as const,
   },
 });

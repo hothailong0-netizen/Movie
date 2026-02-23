@@ -84,6 +84,6 @@ const styles = StyleSheet.create({
   name: {
     color: "#fff",
     fontSize: 14,
-    fontFamily: "Inter_600SemiBold",
+    fontWeight: "600" as const,
   },
 });

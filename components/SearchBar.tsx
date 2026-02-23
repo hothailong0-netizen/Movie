@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     flex: 1,
     color: Colors.dark.text,
     fontSize: 15,
-    fontFamily: "Inter_400Regular",
+    fontWeight: "400" as const,
     paddingVertical: 0,
     ...(Platform.OS === "web" ? { outlineStyle: "none" as any } : {}),
   },
