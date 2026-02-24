@@ -1,12 +1,13 @@
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { KeyboardProvider } from "react-native-keyboard-controller";
 import { StatusBar } from "expo-status-bar";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { queryClient } from "@/lib/query-client";
+import { SplashLoader } from "@/components/SplashLoader";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -47,9 +48,15 @@ function RootLayoutNav() {
 }
 
 export default function RootLayout() {
+  const [showSplash, setShowSplash] = useState(true);
+
   useEffect(() => {
     SplashScreen.hideAsync();
   }, []);
+
+  if (showSplash) {
+    return <SplashLoader onFinish={() => setShowSplash(false)} />;
+  }
 
   return (
     <ErrorBoundary>

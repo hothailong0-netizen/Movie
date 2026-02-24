@@ -26,6 +26,10 @@ function NativeTabLayout() {
         <Icon sf={{ default: "heart", selected: "heart.fill" }} />
         <Label>Yêu thích</Label>
       </NativeTabs.Trigger>
+      <NativeTabs.Trigger name="settings">
+        <Icon sf={{ default: "gearshape", selected: "gearshape.fill" }} />
+        <Label>Cài đặt</Label>
+      </NativeTabs.Trigger>
     </NativeTabs>
   );
 }
@@ -97,6 +101,15 @@ function ClassicTabLayout() {
           title: "Yêu thích",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? "heart" : "heart-outline"} size={22} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Cài đặt",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? "settings" : "settings-outline"} size={22} color={color} />
           ),
         }}
       />
