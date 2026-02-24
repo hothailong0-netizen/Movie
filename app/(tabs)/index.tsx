@@ -69,7 +69,7 @@ export default function HomeScreen() {
     return (
       <View style={[styles.center, { paddingTop: insets.top + webTopInset }]}>
         <Text style={styles.errorText}>
-          Kh\u00f4ng th\u1ec3 t\u1ea3i d\u1eef li\u1ec7u phim.{"\n"}Vui l\u00f2ng ki\u1ec3m tra API key v\u00e0 th\u1eed l\u1ea1i.
+          Không thể tải dữ liệu phim.{"\n"}Vui lòng kiểm tra API key và thử lại.
         </Text>
       </View>
     );
@@ -94,38 +94,38 @@ export default function HomeScreen() {
 
         <View style={{ paddingTop: 8 }}>
           <MovieRow
-            title="\u0110ang chi\u1ebfu"
+            title="Đang chiếu"
             movies={nowPlaying.data?.results || []}
             isLoading={nowPlaying.isLoading}
             onSeeAll={() =>
-              router.push({ pathname: "/category/[type]", params: { type: "now-playing", name: "\u0110ang chi\u1ebfu" } })
+              router.push({ pathname: "/category/[type]", params: { type: "now-playing", name: "Đang chiếu" } })
             }
           />
 
           <MovieRow
-            title="Ph\u1ed5 bi\u1ebfn"
+            title="Phổ biến"
             movies={popular.data?.results || []}
             isLoading={popular.isLoading}
             onSeeAll={() =>
-              router.push({ pathname: "/category/[type]", params: { type: "popular", name: "Ph\u1ed5 bi\u1ebfn" } })
+              router.push({ pathname: "/category/[type]", params: { type: "popular", name: "Phổ biến" } })
             }
           />
 
           <MovieRow
-            title="\u0110\u00e1nh gi\u00e1 cao"
+            title="Đánh giá cao"
             movies={topRated.data?.results || []}
             isLoading={topRated.isLoading}
             onSeeAll={() =>
-              router.push({ pathname: "/category/[type]", params: { type: "top-rated", name: "\u0110\u00e1nh gi\u00e1 cao" } })
+              router.push({ pathname: "/category/[type]", params: { type: "top-rated", name: "Đánh giá cao" } })
             }
           />
 
           <MovieRow
-            title="S\u1eafp chi\u1ebfu"
+            title="Sắp chiếu"
             movies={upcoming.data?.results || []}
             isLoading={upcoming.isLoading}
             onSeeAll={() =>
-              router.push({ pathname: "/category/[type]", params: { type: "upcoming", name: "S\u1eafp chi\u1ebfu" } })
+              router.push({ pathname: "/category/[type]", params: { type: "upcoming", name: "Sắp chiếu" } })
             }
           />
         </View>

@@ -10,7 +10,7 @@ interface SearchBarProps {
   autoFocus?: boolean;
 }
 
-export function SearchBar({ value, onChangeText, placeholder = "T\u00ecm phim...", autoFocus = false }: SearchBarProps) {
+export function SearchBar({ value, onChangeText, placeholder = "Tìm phim...", autoFocus = false }: SearchBarProps) {
   return (
     <View style={styles.container}>
       <Ionicons name="search" size={18} color={Colors.dark.textMuted} style={styles.icon} />

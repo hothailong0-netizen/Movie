@@ -16,7 +16,7 @@ export default function GenresScreen() {
 
   return (
     <View style={[styles.container, { paddingTop: insets.top + webTopInset }]}>
-      <Text style={styles.header}>Th\u1ec3 lo\u1ea1i</Text>
+      <Text style={styles.header}>Thể loại</Text>
       <FlatList
         data={genreList}
         keyExtractor={(item) => String(item.id)}

@@ -20,7 +20,7 @@ export function MovieRow({ title, movies, isLoading, onSeeAll, cardSize = "mediu
         <Text style={styles.title}>{title}</Text>
         {onSeeAll && (
           <Pressable onPress={onSeeAll} style={styles.seeAll} hitSlop={8}>
-            <Text style={styles.seeAllText}>Xem th\u00eam</Text>
+            <Text style={styles.seeAllText}>Xem thêm</Text>
             <Ionicons name="chevron-forward" size={14} color={Colors.dark.primary} />
           </Pressable>
         )}

@@ -73,7 +73,7 @@ export default function GenreScreen() {
         <Pressable onPress={() => router.back()} hitSlop={12} style={styles.backBtn}>
           <Ionicons name="chevron-back" size={24} color={Colors.dark.text} />
         </Pressable>
-        <Text style={styles.headerTitle}>{name || "Th\u1ec3 lo\u1ea1i"}</Text>
+        <Text style={styles.headerTitle}>{name || "Thể loại"}</Text>
         <View style={{ width: 40 }} />
       </View>
 

@@ -65,7 +65,7 @@ export default function MovieDetailScreen() {
   if (!movie) {
     return (
       <View style={styles.center}>
-        <Text style={styles.errorText}>Kh\u00f4ng t\u00ecm th\u1ea5y phim</Text>
+        <Text style={styles.errorText}>Không tìm thấy phim</Text>
       </View>
     );
   }
@@ -192,21 +192,21 @@ export default function MovieDetailScreen() {
 
           {movie.overview ? (
             <View style={styles.overviewSection}>
-              <Text style={styles.sectionTitle}>N\u1ed9i dung</Text>
+              <Text style={styles.sectionTitle}>Nội dung</Text>
               <Text style={styles.overviewText}>{movie.overview}</Text>
             </View>
           ) : null}
 
           {director && (
             <View style={styles.directorRow}>
-              <Text style={styles.directorLabel}>\u0110\u1ea1o di\u1ec5n:</Text>
+              <Text style={styles.directorLabel}>Đạo diễn:</Text>
               <Text style={styles.directorName}>{director.name}</Text>
             </View>
           )}
 
           {cast.length > 0 && (
             <View style={styles.castSection}>
-              <Text style={styles.sectionTitle}>Di\u1ec5n vi\u00ean</Text>
+              <Text style={styles.sectionTitle}>Diễn viên</Text>
               <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 {cast.map((person) => (
                   <CastCard key={person.id} person={person} />
@@ -217,7 +217,7 @@ export default function MovieDetailScreen() {
         </View>
 
         {similar.length > 0 && (
-          <MovieRow title="Phim t\u01b0\u01a1ng t\u1ef1" movies={similar} />
+          <MovieRow title="Phim tương tự" movies={similar} />
         )}
 
         <View style={{ height: 40 }} />

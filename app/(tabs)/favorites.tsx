@@ -85,7 +85,7 @@ export default function FavoritesScreen() {
 
   return (
     <View style={[styles.container, { paddingTop: insets.top + webTopInset }]}>
-      <Text style={styles.header}>Y\u00eau th\u00edch</Text>
+      <Text style={styles.header}>Yêu thích</Text>
       <FlatList
         data={favorites}
         keyExtractor={(item) => String(item.id)}
@@ -96,9 +96,9 @@ export default function FavoritesScreen() {
         ListEmptyComponent={
           <View style={styles.empty}>
             <Ionicons name="heart-outline" size={56} color={Colors.dark.textMuted} />
-            <Text style={styles.emptyTitle}>Ch\u01b0a c\u00f3 phim y\u00eau th\u00edch</Text>
+            <Text style={styles.emptyTitle}>Chưa có phim yêu thích</Text>
             <Text style={styles.emptyText}>
-              Nh\u1ea5n v\u00e0o bi\u1ec3u t\u01b0\u1ee3ng tr\u00e1i tim tr\u00ean trang chi ti\u1ebft phim \u0111\u1ec3 th\u00eam v\u00e0o danh s\u00e1ch y\u00eau th\u00edch
+              Nhấn vào biểu tượng trái tim trên trang chi tiết phim để thêm vào danh sách yêu thích
             </Text>
           </View>
         }

@@ -79,7 +79,7 @@ export default function SearchScreen() {
 
   return (
     <View style={[styles.container, { paddingTop: insets.top + webTopInset }]}>
-      <Text style={styles.header}>T\u00ecm ki\u1ebfm</Text>
+      <Text style={styles.header}>Tìm kiếm</Text>
       <SearchBar value={query} onChangeText={setQuery} autoFocus={false} />
 
       {query.length >= 2 && searchResult.isLoading ? (
@@ -96,14 +96,14 @@ export default function SearchScreen() {
           scrollEnabled={!!movies.length}
           ListHeaderComponent={
             query.length < 2 ? (
-              <Text style={styles.sectionTitle}>Xu h\u01b0\u1edbng</Text>
+              <Text style={styles.sectionTitle}>Xu hướng</Text>
             ) : null
           }
           ListEmptyComponent={
             query.length >= 2 ? (
               <View style={styles.empty}>
                 <Ionicons name="search-outline" size={48} color={Colors.dark.textMuted} />
-                <Text style={styles.emptyText}>Kh\u00f4ng t\u00ecm th\u1ea5y phim n\u00e0o</Text>
+                <Text style={styles.emptyText}>Không tìm thấy phim nào</Text>
               </View>
             ) : null
           }

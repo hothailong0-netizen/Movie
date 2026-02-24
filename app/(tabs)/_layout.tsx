@@ -12,19 +12,19 @@ function NativeTabLayout() {
     <NativeTabs>
       <NativeTabs.Trigger name="index">
         <Icon sf={{ default: "house", selected: "house.fill" }} />
-        <Label>Trang ch\u1ee7</Label>
+        <Label>Trang chủ</Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="search">
         <Icon sf={{ default: "magnifyingglass", selected: "magnifyingglass" }} />
-        <Label>T\u00ecm ki\u1ebfm</Label>
+        <Label>Tìm kiếm</Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="genres">
         <Icon sf={{ default: "square.grid.2x2", selected: "square.grid.2x2.fill" }} />
-        <Label>Th\u1ec3 lo\u1ea1i</Label>
+        <Label>Thể loại</Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="favorites">
         <Icon sf={{ default: "heart", selected: "heart.fill" }} />
-        <Label>Y\u00eau th\u00edch</Label>
+        <Label>Yêu thích</Label>
       </NativeTabs.Trigger>
     </NativeTabs>
   );
@@ -67,7 +67,7 @@ function ClassicTabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Trang ch\u1ee7",
+          title: "Trang chủ",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? "home" : "home-outline"} size={22} color={color} />
           ),
@@ -76,7 +76,7 @@ function ClassicTabLayout() {
       <Tabs.Screen
         name="search"
         options={{
-          title: "T\u00ecm ki\u1ebfm",
+          title: "Tìm kiếm",
           tabBarIcon: ({ color }) => (
             <Ionicons name="search" size={22} color={color} />
           ),
@@ -85,7 +85,7 @@ function ClassicTabLayout() {
       <Tabs.Screen
         name="genres"
         options={{
-          title: "Th\u1ec3 lo\u1ea1i",
+          title: "Thể loại",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? "grid" : "grid-outline"} size={22} color={color} />
           ),
@@ -94,7 +94,7 @@ function ClassicTabLayout() {
       <Tabs.Screen
         name="favorites"
         options={{
-          title: "Y\u00eau th\u00edch",
+          title: "Yêu thích",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? "heart" : "heart-outline"} size={22} color={color} />
           ),

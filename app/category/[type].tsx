@@ -25,10 +25,10 @@ const ITEM_GAP = 10;
 const ITEM_WIDTH = (SCREEN_WIDTH - 32 - ITEM_GAP * (COLUMNS - 1)) / COLUMNS;
 
 const CATEGORY_TITLES: Record<string, string> = {
-  "now-playing": "\u0110ang chi\u1ebfu",
-  popular: "Ph\u1ed5 bi\u1ebfn",
-  "top-rated": "\u0110\u00e1nh gi\u00e1 cao",
-  upcoming: "S\u1eafp chi\u1ebfu",
+  "now-playing": "Đang chiếu",
+  popular: "Phổ biến",
+  "top-rated": "Đánh giá cao",
+  upcoming: "Sắp chiếu",
 };
 
 const fetchFns: Record<string, (page: number) => Promise<any>> = {
