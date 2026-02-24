@@ -171,6 +171,23 @@ export default function MovieDetailScreen() {
             </View>
           </View>
 
+          <Pressable
+            style={({ pressed }) => [
+              styles.watchBtn,
+              { opacity: pressed ? 0.85 : 1, transform: [{ scale: pressed ? 0.97 : 1 }] },
+            ]}
+            onPress={() => {
+              Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+              router.push({
+                pathname: "/watch/[id]",
+                params: { id: String(movie.id), title: movie.title },
+              });
+            }}
+          >
+            <Ionicons name="play" size={20} color="#fff" />
+            <Text style={styles.watchBtnText}>Xem phim</Text>
+          </Pressable>
+
           {movie.genres && movie.genres.length > 0 && (
             <View style={styles.genreRow}>
               {movie.genres.map((g) => (
@@ -458,5 +475,20 @@ const styles = StyleSheet.create({
   castSection: {
     marginTop: 20,
     marginBottom: 20,
+  },
+  watchBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: Colors.dark.primary,
+    borderRadius: 12,
+    paddingVertical: 14,
+    gap: 8,
+    marginTop: 16,
+  },
+  watchBtnText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "700" as const,
   },
 });
