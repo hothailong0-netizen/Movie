@@ -83,12 +83,6 @@ export default function SettingsScreen() {
 
           <View style={styles.infoCard}>
             <InfoRow
-              icon="film-outline"
-              label="Nguồn dữ liệu"
-              value="TMDb API"
-            />
-            <View style={styles.infoRowDivider} />
-            <InfoRow
               icon="language-outline"
               label="Ngôn ngữ"
               value="Tiếng Việt"
