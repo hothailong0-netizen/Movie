@@ -33,6 +33,8 @@ jobs:
 
       - name: Generate native Android project
         run: npx expo prebuild --platform android --no-install
+        env:
+          EXPO_PUBLIC_API_SERVER: ${{ secrets.EXPO_PUBLIC_API_SERVER }}
 
       - name: Make gradlew executable
         run: chmod +x android/gradlew

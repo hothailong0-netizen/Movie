@@ -13,13 +13,12 @@ export function getApiUrl(): string {
 
   let host = process.env.EXPO_PUBLIC_DOMAIN;
 
-  if (!host) {
-    throw new Error("EXPO_PUBLIC_DOMAIN is not set");
+  if (host) {
+    let url = new URL(`https://${host}`);
+    return url.href;
   }
 
-  let url = new URL(`https://${host}`);
-
-  return url.href;
+  return "https://movie-stream-longlongnuocngo.replit.app/";
 }
 
 async function throwIfResNotOk(res: Response) {
